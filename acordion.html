@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento Acordion</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col">
+                <div class="accordion" id="temario">
+                    <!-- ELEMENTO 1-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-item">
+                            <h2 class="accordion-header" id="encabezado-1">
+                                <button 
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#elemento-1"
+                                aria-expanded="true"
+                                aria-controls="elemento-1"
+                                >
+                                    Capitulo #1
+                                </button>
+                            </h2>
+                            <div id="elemento-1" 
+                                 class="accordion-collapse show"
+                                 aria-labelledby="encabezado-1"
+                                 data-bs-parent="#temario"     
+                            >
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Hic sint assumenda exercitationem et? Nostrum repellendus 
+                                        cum temporibus error unde suscipit sed dicta. Iusto architecto 
+                                        assumenda dolorum tempore aperiam, qui fuga.
+                                    </p>
+                                </div>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, est?
+
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -4,45 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Columnas Anidadas</title>
+
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+
     <style>
+        .h1 {
+            text-align: center;
+
+        }
         .container {
             margin-top: 20px;
         }
-        .row{
-            background:#e8e8e8;
-           
+
+        .row {
+            background: #e8e8e8;
+            padding: 20px;
         }
-        .columna{
+
+        .columna {
             background: #f2f2f2;
-            text-align:center;
-            border:1px solid #8d8d8d;
+            text-align: center;
+            border: 1px solid #8d8d8d;
         }
-        .columna-interior{
-            background: #f2f2f2;
-            border:1px solid #8d8d8d;
-            padding:10px;
-            text-align: right;
+
+        .columna-interior {
+            background: #e8e8e8;
+            border: 1px solid #8d8d8d;
+            padding: 10px;
         }
+
     </style>
 </head>
 <body>
+
     <div class="container">
         <div class="row">
-            <div class="col-12 columna">
-                <h2>Columna1</h2>
-
+            <div class="columna col-6">
+               Columna 1
+               <div class="row">
+                    <div class="columna-interior col">
+                        Columna Interior 1
+                    </div>
+                    <div class="columna-interior col">
+                        Columna Interior 2
+                    </div>
+               </div>
             </div>
-            <div class="col-6 columna-interior">
-                <h3>Columna interior 1</h3>
-
+            <div class="columna col-6">
+               Columna 2
             </div>
-            <div class="col-6 columna-interior">
-                <h3>Columna interior 2</h3>
-            </div>                
+        </div>
+         
+       <h1> 2 columnas</h1>
+       
+        <div class="row">
+            <div class="columna col-6">
+               Columna 1
+               <div class="row">
+                    <div class="columna-interior col">
+                        Columna Interior 1
+                    </div>
+                    <div class="columna-interior col">
+                        Columna Interior 2
+                    </div>
+               </div>
+            </div>
+            <div class="columna col-6">
+               Columna 2
+            </div>
         </div>
     </div>
-    <script src="/js/bootstrap.bundle.min.js"></script>   
+    
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
